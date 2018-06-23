@@ -1,0 +1,29 @@
+{
+	"manifest_version": 2,
+
+	"name": "Football Live Result",
+	"description": "Football Live Result",
+	"version": "1.0",
+
+	"browser_action": {
+		"default_icon": "icon.png",
+		"default_popup": "./dist/index.html"
+	},
+	"permissions": [
+		"storage",
+		"activeTab",
+		"cookies",
+		"tabs",
+		"*://*.aparat.com/*",
+		"http://*/*",
+		"https://*/*",
+		"webRequest"
+	],
+	"content_scripts": [{
+		"matches": ["https://www.aparat.com/*"],
+		"js": ["contentscript.js"]
+	}],
+	"background": {
+		"scripts": ["background.js"]
+	}
+}
