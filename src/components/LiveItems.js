@@ -47,7 +47,7 @@ class LiveItems extends Component {
 
 	dataToState = ({ data }: any) => {
 		data[0].data.map((item: any) => {
-			if (item.status === 'end') {
+			if (item.status !== 'not-play') {
 				this.setState({
 					matches: [
 						...this.state.matches,
