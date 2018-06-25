@@ -2,4 +2,4 @@
 A Chrome extension to display football live score.
 
 ## 🤓 Screenshot
-![Screenshot](https://raw.githubusercontent.com/omidnikrah/football-live-score-extension/master/screenshot.png =400x)
+![Screenshot](https://raw.githubusercontent.com/omidnikrah/football-live-score-extension/master/screenshot.png){ width= 400px }
